@@ -1,5 +1,5 @@
 // 1920. Build Array from Permutation
-package com.leetcode;
+package leetcode;
 
 import java.util.Arrays;
 import java.util.Scanner;

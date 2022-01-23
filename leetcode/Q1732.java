@@ -1,6 +1,4 @@
-package com.leetcode;
-
-import com.arrays.MaxElement;
+package leetcode;
 
 import java.util.ArrayList;
 import java.util.Collection;

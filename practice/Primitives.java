@@ -1,4 +1,4 @@
-package com.company;
+package practice;
 
 public class Primitives {
     public static void main(String[] args) {

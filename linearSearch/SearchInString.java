@@ -1,4 +1,4 @@
-package com.linearSearch;
+package linearSearch;
 
 public class SearchInString {
     public static void main(String[] args) {

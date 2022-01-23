@@ -1,10 +1,10 @@
-package com.linearSearch;
+package linearSearch;
 
 public class Main {
     public static void main(String[] args) {
 
         int[] nums = {24, 45 , 1 ,54, 65, 244,643,234,64};
-        int target = 543    ;
+        int target = 1    ;
         int ans = linearsearch(nums , target);
         System.out.println(ans);
     }

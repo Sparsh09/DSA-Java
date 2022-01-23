@@ -1,4 +1,4 @@
-package com.methods;
+package methods;
 
 public class Swap {
     public static void main(String[] args) {
