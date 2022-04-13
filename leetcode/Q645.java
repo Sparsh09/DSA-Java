@@ -12,7 +12,7 @@ public class Q645 {
     static int[] findErrorNums(int[] nums) {
         int i =0 ;
         while(i < nums.length){
-            if(nums[i] != i + 1){
+            if(nums[i] != nums[nums[i]-1]){
                 swap(nums , i, nums[i] - 1);
             }else {
                 i++;
