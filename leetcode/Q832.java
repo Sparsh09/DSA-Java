@@ -8,28 +8,29 @@ public class Q832 {
         Scanner in = new Scanner(System.in);
         int n = 3;
         int[][] ar = {{1,1,0},{1,0,1},{0,0,0}};
-
-        System.out.println(Arrays.toString(ar));
-        flipAndInvertImage(ar);
-    }
-    static void flipAndInvertImage(int[][] image) {
-//        int[][] ar= new int[image.length][];
-        System.out.println(Arrays.toString(image));
-        for(int i =0 ; i< image.length; i++){
-            for(int j = 0 ; j < image[i].length; j++){
-                if(image[i][j] == 0){
-                    image[i][j] = 1;
-                }else {
-                    image[i][j] = 0;
-                }
-            }
-        }
-        for(int i =0 ; i < 3; i++){
-            for(int j =0 ; j < 3; j++){
-                System.out.print(image[i][j]);
+        ar = flipAndInvertImage(ar);
+        for (int[] a:ar) {
+            for (int e : a) {
+                System.out.print(e);
             }
             System.out.println();
+
         }
-        System.out.println(Arrays.toString(image));
+    }
+    public static int[][] flipAndInvertImage(int[][] image) {
+        int count = 0;
+        for (int[] ar : image) {
+            image[count++] = reverseAr(ar);
+        }
+        return image;
+    }
+    public static int[] reverseAr(int[] ar){
+        int n = ar.length;
+        for(int i = 0; i <= (n +1)/ 2; i++){
+            int temp  = ar[i] ^ 1;
+            ar[i] = ar[n-i-1] ^ 1;
+            ar[n-i-1] = temp;
+        }
+        return ar;
     }
 }
